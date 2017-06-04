@@ -1,0 +1,25 @@
+{
+  "name": "blogapi",
+  "version": "1.0.0",
+  "description": "build blog api",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daxapps/BlogAPI.git"
+  },
+  "author": "Dax",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daxapps/BlogAPI/issues"
+  },
+  "homepage": "https://github.com/daxapps/BlogAPI#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "morgan": "^1.8.2",
+    "uuid": "^3.0.1"
+  }
+}
