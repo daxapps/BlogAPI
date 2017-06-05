@@ -13,12 +13,6 @@ const blogPostsRouter = require('./blogPostsRouter');
 // log the http layer
 app.use(morgan('common'));
 
-
-
-// app.get('/blog-posts', (req, res) => {
-//   res.json(BlogPosts.get());
-// });
-
 app.get('/', (req, res) => {
   res.sendFile(__dirname);
 });
