@@ -25,6 +25,7 @@ router.post('/', jsonParser, (req, res) => {
       return res.status(400).send(message);
     }
   }
+});
 
  router.delete('/:id', (req, res) => {
   BlogPosts.delete(req.params.id);
@@ -33,6 +34,7 @@ router.post('/', jsonParser, (req, res) => {
 });
 
 router.put('/:id', jsonParser, (req, res) => {
+  console.log(req.body)
   const requiredFields = ['id', 'title', 'content', 'author', 'publishDate'];
   for (let i=0; i<requiredFields.length; i++) {
     const field = requiredFields[i];
@@ -58,13 +60,8 @@ router.put('/:id', jsonParser, (req, res) => {
     publishDate:req.body.publishDate
   });
   res.status(204).end();
+
 });
-
-  const item = BlogPosts.create(req.body.title, req.body.content, req.body.author);
-  res.status(201).json(item);
-});
-
-
-
 
 module.exports = router;
+
