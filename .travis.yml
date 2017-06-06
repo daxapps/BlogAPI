@@ -1,2 +1,9 @@
 language: node_js
 node_js: node
+deploy:
+  provider: heroku
+  api_key:
+    secure: xaDekS0BjoKrgmE17JcLkbbK7dkuvgpHiCKAAjVHaYfwQ5NbtctwvrmDekrjRATtI5PGz/4SeoQ5kALhILK5QstAY99CwSqoVNlnRUNa+QbVBKKdAyKutuI0MiDgTjFIDjFgYronztoKW7mVKbt3/BMxogNFN7IvyiE/fSPhLwlOpxtF+mAnOh2NXyQ52uoCRU0CBSumPmqS8F3wJky7cbSS2luUHM9aRhMcB/CKp2TrehOVGQ3btUqDYMiHaDw/IF2wenv+0XR6GyhKifUnnadLRPcudfEKr8hWtvIHlWPxkXV+JHiLzaSwC2rwF563L+Q++Qm1hIFsYo5P2AUUDtsC5x+g68WHsuXuIbSK3D+YcsuCT1CUVsMSDysTVs/01yxfjau6/ieaUWcUqHEsh3dk962U/vIJf1rPpXM67XUciaP+U6Ydm1oU9ApMPMBt4plpXwgbiWjdIIcJncBINCgyxPb4fmovatVUPQgq+1ApJgsYed/hLvv5NyaEb+OoP8/60aCCkZ4BUO127Jacg4yroKjq6R1LOoWI/ybA66nhp4uNYOnHject8ZKb/0y6KwbddboyL881TEj7O1i3yeMCe3eSRAOPNQcUL6687uGfMn8vRITGJ+ywCcKgLuVyVrhQjrb4x7iS8shto4Ha29KHq9vltEm45piS7aMexf8=
+  app: shrouded-lake-20823
+  on:
+    repo: daxapps/BlogAPI
