@@ -4,7 +4,8 @@
   "description": "build blog api",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,10 @@
     "express": "^4.15.3",
     "morgan": "^1.8.2",
     "uuid": "^3.0.1"
+  },
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "chai-http": "^3.0.0",
+    "mocha": "^3.4.2"
   }
 }
